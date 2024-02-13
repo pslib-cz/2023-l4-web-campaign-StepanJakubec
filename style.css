@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
 body{
     margin: 0;
+    font-family: Nunito;
+    
 }
 
 .navbar{
@@ -16,7 +20,7 @@ body{
 }
 
 main{
-    margin: 0 60px;
+    margin: 0 20px;
 }
 
 .uvod{
@@ -26,4 +30,32 @@ main{
 .uvod_img{
     z-index: -1;
     max-width: 100%;
+}
+
+.prvni{
+    text-align: center;
+}
+
+.hiphop
+
+.hiphop_popis{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kurz-obrazek{
+    max-width: 100%;
+}
+
+.aerobik_popis{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+.contemporary_popis{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
 }
