@@ -15,12 +15,12 @@ body{
     color: white;
 }
 
-.Logo{
+.navbar__logo{
     max-width: 100px;
 }
 
 main{
-    margin: 0 20px;
+    margin: 0 10%;
 }
 
 .uvod{
@@ -28,54 +28,65 @@ main{
     text-align: center;
 }
 
-.uvod_img{
-    max-width: 100%;
+.uvod__img{
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
 }
 
-.uvod_text{
+.uvod__text{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-weight: 500;
+    width: 100%;
     min-width: 200px;
     text-shadow: 20px;
+    font-size: 4vw;
+
 }
 
-.prvni{
+.a-styl-section{
+    margin-top: 60px;
+}
+
+.a-styl-section--center{
     text-align: center;
+    margin-top: 60px
 }
 
-.hiphop
-
-.hiphop_popis{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.a-styl-section__heading{
+    font-size: 40px;
 }
 
-.kurz-obrazek{
-    max-width: 100%;
+.a-styl-section__text{
+    font-size: 16px;
 }
 
-.aerobik_popis{
-    display: flex;
-    
-    flex-wrap: wrap;
+.a-styl-section__text--bigger{
+    font-size: 28px;
 }
 
-.contemporary_popis{
-    display: flex;
-    
-    flex-wrap: wrap;
+.a-styl-section__CTA{
+    font-size: 24px;
 }
 
-.uvod_foto{
-    
+
+.a-styl-section__img{
+    width: 100%;
 }
 
-.button{
+.a-styl-section__img--reverse{
+    width: 100%;
+    grid-row: 1;
+}
+
+.red-text{
+    color: red;
+}
+
+.navbar__button{
     text-decoration: none;
     color: white;
     font-weight: 400;
@@ -86,11 +97,15 @@ main{
     color: white;
     font-weight: 400;
     background-color: red;
-    padding: 6px;
-    border-radius: 5px;
+    padding: 6px 20px;
+    border-radius: 9px;
 }
 
-.button--info{
+.button--CTA:hover{
+    background-color: rgb(182, 1, 1);
+}
+
+.zaver__button--info{
     text-decoration: underline;
     color: red;
     font-weight: 400;
@@ -99,10 +114,63 @@ main{
 
 .zaver{
     text-align: center;
-    margin-bottom: 20px;
+    margin: 4em 0;
+}
+
+.zaver__text{
+    font-size: 32px;
+}
+
+.zaver__additional-text{
+    text-align: center;
+    padding: 1em;
 }
 
 footer{
-    background-color: gray;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 0, 60px;
+}
+
+.kontakt-nadpis{
+    padding: 1em 0.7em;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.kontakt-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+    gap: 40px;
+}
+
+.kontakt-container__section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.kontakt-container__social-media{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.kontakt-container__social-media-icon{
+    max-width: 72px;
+}
+
+@media (min-width: 900px) {
+    
+.a-styl-section__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+
+}
+
 
 }
