@@ -75,6 +75,7 @@ main{
 
 .a-styl-section__img{
     width: 100%;
+    display: block;
 }
 
 .a-styl-section__img--reverse{
